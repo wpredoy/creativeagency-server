@@ -21,7 +21,9 @@ app.use(bodyParser.json());
 app.use(express.static('agency'));
 app.use(fileUpload());
 
-
+app.get('/', (req,res)=> {
+    res.send("working is done")
+})
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
