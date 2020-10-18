@@ -1,7 +1,3 @@
-// database user name creative
-// database password angecy123456
-//database name : creative; agency
-
 const express = require("express");
 const fileUpload = require('express-fileupload');
 const MongoClient = require('mongodb').MongoClient;
